@@ -276,7 +276,7 @@ latex_logo = 'UW-logo.png'
 #latex_show_urls = False
 
 # Documents to append as an appendix to all manuals.
-latex_appendices = ['appendices']
+#latex_appendices = ['appendices']
 
 # If false, no module index is generated.
 #latex_domain_indices = True
