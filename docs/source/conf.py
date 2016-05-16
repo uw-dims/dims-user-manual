@@ -336,8 +336,8 @@ if os.environ.get('DOCSURL') is None:
 intersphinx_cache_limit = -1   # days to keep the cached inventories (0 == forever)
 if on_rtd:
     intersphinx_mapping = {
-            'dimstrainingmanual': ("https://dims-training-manual.readthedocs.io/en/{1}".format(git_tag), None),
-            'dimsjds': ("https://dims-jds.readthedocs.io/en/{1}".format(git_tag), None),
+            'dimstrainingmanual': ("https://dims-training-manual.readthedocs.io/en/{0}".format(git_tag), None),
+            'dimsjds': ("https://dims-jds.readthedocs.io/en/{0}".format(git_tag), None),
     }
 else:
     intersphinx_mapping = {
