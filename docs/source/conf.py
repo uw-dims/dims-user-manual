@@ -330,13 +330,17 @@ git_tag = os.environ.get('GITTAG', "")
 
 #os.environ['DOCSURL'] = "file://{}".format(os.environ.get('GIT'))
 if os.environ.get('DOCSURL') is None:
-    if on_rtd:
-        os.environ['DOCSURL'] = "https://{0}.readthedocs.io/en/{1}".format(
-            'dims-user-manual',
-            git_tag)
-    else:
+    if not on_rtd:
         os.environ['DOCSURL'] = "http://demo.prisem.washington.edu:8080/docs/{}/html".format(git_branch)
 
 intersphinx_cache_limit = -1   # days to keep the cached inventories (0 == forever)
-intersphinx_mapping = {
-}
+if on_rtd:
+    intersphinx_mapping = {
+            'dimstrainingmanual': ("https://dims-training-manual.readthedocs.io/en/{1}".format(git_tag), None),
+            'dimsjds': ("https://dims-jds.readthedocs.io/en/{1}".format(git_tag), None),
+    }
+else:
+    intersphinx_mapping = {
+            'dimstrainingmanual': ("{}/dims-ocd".format(os.environ['DOCSURL']), None),
+            'dimsjds': ("{}/dims-ocd".format(os.environ['DOCSURL']), None),
+    }
