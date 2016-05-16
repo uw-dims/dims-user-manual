@@ -1,0 +1,12 @@
+{
+  "full_name": "Dave Dittrich",
+  "email": "dittrich@u.washington.edu",
+  "project_name": "DIMS User Manual",
+  "project_slug": "dims-user-manual",
+  "project_short_description": "DIMS User Manual",
+  "release_date": "2016-05-15",
+  "project_version": "0.1.0",
+  "project_copyright_name": "University of Washington",
+  "project_copyright_date": "2014-2016",
+  "docs_dir_name": "docs"
+}
