@@ -1,8 +1,6 @@
-.. _license:
-
 License
 =======
 
-.. include:: license.txt
+.. include:: ../../license.txt
    :literal:
 
