@@ -343,4 +343,6 @@ else:
     intersphinx_mapping = {
             'dimstrainingmanual': ("{}/dims-ocd".format(os.environ['DOCSURL']), None),
             'dimsjds': ("{}/dims-ocd".format(os.environ['DOCSURL']), None),
+            'dimsad': ("{}/dims-ad".format(os.environ['DOCSURL']), None),
+            'ansibleinventory': ("{}/ansible-inventory".format(os.environ['DOCSURL']), None),
     }
